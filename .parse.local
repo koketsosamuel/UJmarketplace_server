@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "sam"
+    },
+    "sam": {
+      "applicationId": "WqG0fowUKTAABUG6bnCcxL6uZYYPXxhXzSLngyPV"
+    }
+  }
+}

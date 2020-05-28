@@ -1,0 +1,5 @@
+// email when banned
+email verification
+email to reporter
+// email for password reset
+// delete products on ban

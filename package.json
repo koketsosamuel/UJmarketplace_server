@@ -1,0 +1,26 @@
+{
+  "name": "ujmarketplace-server",
+  "version": "1.0.0",
+  "description": "a server for the uj marketplace",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maotomabe Koketso",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.16.4",
+    "helmet": "3.21.3",
+    "image-size": "0.7.4",
+    "jsonwebtoken": "8.5.1",
+    "mongoose": "5.5.4",
+    "mongoose-regex-search": "0.7.6",
+    "multer": "1.4.1",
+    "nodemailer": "6.2.1",
+    "random-strr": "1.0.0",
+    "rimraf": "2.6.3",
+    "sharp": "0.22.1"
+  }
+}
