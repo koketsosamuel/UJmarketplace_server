@@ -36,7 +36,8 @@ module.exports = {
         pos: position
       }
 
-      let token = await jwt.sign(user, config.emailVerificationKey, {expiresIn: "1h"})
+      let token = await jwt.sign(user, config.emailVerificationKey, {expiresIn: "2h"})
+      console.log(token, "@@")
 
       htmlBody = `
       
@@ -55,13 +56,17 @@ module.exports = {
       let mailSent = await mail(req.body.email, "UJmarketplace: Verify Email", htmlBody)
       if(mailSent) res.json({error: false, message: `Please verify your email. A link has been sent to ${req.body.email}`})
       res.json({error: true, message: "Please try again"})
-
-
+      
     },
 
     verifyemail: async (req, res) => {
 
-      // let user = {}
+      let htmlBody = `
+      
+        <h1>Email Verified</h1>
+        <p>You can now login and sell!</p>
+
+      `
 
       let user = await jwt.verify(req.params.token, config.emailVerificationKey)
 

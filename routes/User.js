@@ -12,6 +12,9 @@ router.post("/register", user.register)
 //user login
 router.post("/login", user.login)
 
+// verify email and add user
+router.post("/verify/:token", user.verifyemail)
+
 //remove user
 router.delete("/rem/:id", auth, adminOrOwner, user.removeUser)
 

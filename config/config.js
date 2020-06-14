@@ -10,7 +10,7 @@ module.exports = {
       pass: "K0k3t$00"
     },
 
-    dbConnStr: "mongodb://127.0.0.1:27017/ujm",
+    dbConnStr: "mongodb://127.0.0.1:27017/ujm2",
     tokenKey: "k0k3t$005653876",
     emailTokenKey: "k0k3t$005653876@email",
     emailVerificationKey: "1234!@#$%^&3",

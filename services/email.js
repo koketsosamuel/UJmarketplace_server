@@ -21,6 +21,7 @@ module.exports = async (to, subject, html) => {
   await transport.sendMail(mailOptions, (err, info) => {
     
     if(err) {
+      console.error(err)
       return false
     }
 
